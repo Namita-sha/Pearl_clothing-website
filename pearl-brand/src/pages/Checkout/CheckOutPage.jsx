@@ -143,7 +143,7 @@ const CheckoutPage = () => {
             {loading ? 'Processing...' : `Pay ₹${total.toLocaleString('en-IN')}`}
           </button>
 
-          <p className="secure-note">🔒 Secured by Razorpay</p>
+          <p className="secure-note">Secured by Razorpay</p>
         </div>
       </div>
     </div>
