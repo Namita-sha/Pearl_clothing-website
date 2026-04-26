@@ -37,7 +37,7 @@ import OrdersPage from './pages/Orders/OrdersPage';
 import AIStylist from './pages/AIStylist/AIStylist';
 import WishlistPage from './pages/Wishlist/WishlistPage';
 import ProfilePage  from './pages/Profile/ProfilePage';
-
+// temp change for redeploy
 import './App.css';
 
 function App() {
