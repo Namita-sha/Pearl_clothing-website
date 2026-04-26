@@ -1,0 +1,125 @@
+/* ── Navbar ──────────────────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 52px;
+  padding: 0 2rem;
+
+  background: #121212;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #d4af37;
+  flex-shrink: 0;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.navbar-links a {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #d4af37;
+}
+
+.navbar-links .ai-link {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.navbar-links .atelier-link {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+/* Icons row */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.icon-button:hover {
+  color: #d4af37;
+}
+
+/* Search */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.hidden-search-input {
+  width: 0;
+  max-width: 140px;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  font-size: 0.78rem;
+  font-family: inherit;
+  padding: 0.2rem 0;
+  transition: width 0.3s, border-color 0.3s;
+  background: transparent;
+  color: #fff;
+}
+
+.search-container:focus-within .hidden-search-input,
+.hidden-search-input:focus {
+  width: 120px;
+  border-bottom-color: #d4af37;
+}
+
+/* Username */
+.navbar-username {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #d4af37;
+  white-space: nowrap;
+}
+
+/* Push page content below the fixed bar */
+body {
+  padding-top: 52px;
+}
+

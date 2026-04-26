@@ -1,0 +1,156 @@
+.orders-page {
+  min-height: 100vh;
+  background: #0e0e0e;
+  padding: 3rem 2rem 6rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.orders-title {
+  font-size: 2rem;
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.success-banner {
+  background: rgba(76,175,80,0.15);
+  border: 1px solid rgba(76,175,80,0.3);
+  color: #4caf50;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+.order-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,55,0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.order-id {
+  font-size: 0.9rem;
+  color: #d4af37;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.order-date {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: sans-serif;
+}
+
+.order-right { text-align: right; }
+
+.order-status {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.order-status.paid    { background: rgba(76,175,80,0.15);  color: #4caf50; }
+.order-status.pending { background: rgba(255,193,7,0.15);  color: #ffc107; }
+.order-status.failed  { background: rgba(244,67,54,0.15);  color: #f44336; }
+
+.order-total {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.order-items { display: flex; flex-direction: column; gap: 0.8rem; }
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order-item img {
+  width: 55px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.order-item p { font-size: 0.9rem; color: #ddd; margin-bottom: 0.2rem; }
+
+.order-item-meta {
+  font-size: 0.8rem !important;
+  color: #666 !important;
+  font-family: sans-serif;
+}
+
+.order-address {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  color: #666;
+  font-family: sans-serif;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.no-orders {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #555;
+}
+
+.no-orders p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+.no-orders button {
+  padding: 0.7rem 2rem;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  transition: all 0.2s;
+}
+
+.no-orders button:hover { background: #d4af37; color: #121212; }
+
+.orders-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1.5rem;
+  color: #666;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(212,175,55,0.2);
+  border-top-color: #d4af37;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
