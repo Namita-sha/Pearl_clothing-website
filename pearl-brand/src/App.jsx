@@ -30,13 +30,12 @@ import ScarletChapter from './pages/Editorial/ScarletChapter';
 import Winter25 from './pages/Editorial/Winter25';
 import DebutanteEdge from './pages/Editorial/DebutanteEdge';
 
-// ✅ New Pages (you need to create these folders/files — see below)
 import CartPage from './pages/Cart/CartPage';
 import CheckoutPage from './pages/Checkout/CheckoutPage';
 import OrdersPage from './pages/Orders/OrdersPage';
 import AIStylist from './pages/AIStylist/AIStylist';
 import WishlistPage from './pages/Wishlist/WishlistPage';
-import ProfilePage  from './pages/Profile/ProfilePage';
+import ProfilePage from './pages/Profile/ProfilePage';
 
 import './App.css';
 
@@ -79,14 +78,13 @@ function App() {
           <Route path="/editorial/winter-25" element={<Winter25 />} />
           <Route path="/editorial/debutante-edge" element={<DebutanteEdge />} />
 
-          {/* ✅ New Routes */}
+          {/* New Routes */}
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/orders" element={<OrdersPage />} />
           <Route path="/ai-stylist" element={<AIStylist />} />
           <Route path="/wishlist" element={<WishlistPage />} />
-          <Route path="/profile"  element={<ProfilePage />} />
-
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
         <Footer />
       </div>
